@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d0" for="node" attr.name="rank" attr.type="string"/>
+<graph edgedefault="directed"><node id="Mammalia">
+  <data key="d0">class</data>
+</node>
+<node id="Primates">
+  <data key="d0">order</data>
+</node>
+<node id="Hominidae">
+  <data key="d0">family</data>
+</node>
+<node id="Homo sapiens">
+  <data key="d0">species</data>
+</node>
+<node id="Carnivora">
+  <data key="d0">order</data>
+</node>
+<node id="Felidae">
+  <data key="d0">family</data>
+</node>
+<node id="Panthera leo">
+  <data key="d0">species</data>
+</node>
+<node id="Canidae">
+  <data key="d0">family</data>
+</node>
+<node id="Canis lupus">
+  <data key="d0">species</data>
+</node>
+<node id="Proboscidea">
+  <data key="d0">order</data>
+</node>
+<node id="Elephantidae">
+  <data key="d0">family</data>
+</node>
+<node id="Loxodonta africana">
+  <data key="d0">species</data>
+</node>
+<node id="Cetacea">
+  <data key="d0">order</data>
+</node>
+<node id="Balaenopteridae">
+  <data key="d0">family</data>
+</node>
+<node id="Balaenoptera musculus">
+  <data key="d0">species</data>
+</node>
+<edge source="Mammalia" target="Primates">
+  <data key="d1">1</data>
+</edge>
+<edge source="Mammalia" target="Carnivora">
+  <data key="d1">1</data>
+</edge>
+<edge source="Mammalia" target="Proboscidea">
+  <data key="d1">1</data>
+</edge>
+<edge source="Mammalia" target="Cetacea">
+  <data key="d1">1</data>
+</edge>
+<edge source="Primates" target="Hominidae">
+  <data key="d1">1</data>
+</edge>
+<edge source="Hominidae" target="Homo sapiens">
+  <data key="d1">1</data>
+</edge>
+<edge source="Carnivora" target="Felidae">
+  <data key="d1">1</data>
+</edge>
+<edge source="Carnivora" target="Canidae">
+  <data key="d1">1</data>
+</edge>
+<edge source="Felidae" target="Panthera leo">
+  <data key="d1">1</data>
+</edge>
+<edge source="Canidae" target="Canis lupus">
+  <data key="d1">1</data>
+</edge>
+<edge source="Proboscidea" target="Elephantidae">
+  <data key="d1">1</data>
+</edge>
+<edge source="Elephantidae" target="Loxodonta africana">
+  <data key="d1">1</data>
+</edge>
+<edge source="Cetacea" target="Balaenopteridae">
+  <data key="d1">1</data>
+</edge>
+<edge source="Balaenopteridae" target="Balaenoptera musculus">
+  <data key="d1">1</data>
+</edge>
+</graph></graphml>
