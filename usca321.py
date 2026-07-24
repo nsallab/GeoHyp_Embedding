@@ -33,8 +33,9 @@ def buildKNNGraph(deg,distMat,fitDist):
     return [delVect,G]
 
 
+
 if __name__ == "__main__":
-    path = "/Users/kave/Downloads/"
+    path = "./GeoHyp_Embedding"
     filename="usca312.edges"
     usca312=np.loadtxt(path+filename)
     distMat=np.zeros((312,312))
@@ -76,7 +77,13 @@ if __name__ == "__main__":
 
     [delVect,G]=buildKNNGraph(5, distMat)
 
-    path = "/Users/kave/Downloads/"
+
+
+####################################################
+
+
+
+    path = "./"
     filename="mammal_closure.graphml"
     G=nx.read_graphml(path+filename)
     G = nx.convert_node_labels_to_integers(G)
