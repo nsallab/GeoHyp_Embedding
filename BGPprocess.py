@@ -37,7 +37,7 @@ def getTreeDist(G,graphTree):
             for i in range(0,len(neighbors)):
                 treeDist[G.edge(e.target(),neighbors[i])]=dist[i]
     return(treeDist)
-path='/Users/kave/kDrive/JigsawProcessed/'
+path='./'
 
 filename=path+"dist1199167200.pkl"
 filehandler = open(filename,"rb")
@@ -94,7 +94,7 @@ plt.ylabel("error after MDS")
 plt.show()
 
 eng = matlab.engine.start_matlab("-desktop")
-eng.cd(r'/Users/kave/Downloads/MDS-PD-matlab', nargout=0)
+eng.cd(r'./MDS-PD-matlab', nargout=0)
 eng.workspace['xsp'] = eng.double(coords[:,0].ravel())
 eng.workspace['ysp'] = eng.double(coords[:,1].ravel())
 eng.workspace['zsp'] = eng.double(coords[:,2].ravel())
@@ -171,15 +171,6 @@ plt.show()
 
 
 
-#distTreeVect=shortest_distance(graphTree,weights=G.edge_properties['distance'])
-#distTree=np.zeros((G.num_vertices(),G.num_vertices()))
-#for i in range(0,G.num_vertices()):
-#        distTree[i]=distTreeVect[i]
-#filename=path+"distTree1199167200.pkl"
-#filehandler = open(filename,"wb")
-#pkl.dump(distTree,filehandler)
-#filehandler.close()
-#G=read_graphml(path+'processed_graphdumps1199167200.1199170800.graphml')
 treeG=minimum_spanning_tree(G,weight='distance')
 
 G=load_graph(path+'processed_graphdumps1388556000.1388559600.graphml')
@@ -220,7 +211,7 @@ filehandler.close()
 
 
 
-path='/Users/kave/kDrive/JigsawProcessed/'
+path='./'
 G=read_graphml(path+'processed_graphdumps1199167200.1199170800.graphml')
 filename=path+"dist1199167200.pkl"
 filehandler = open(filename,"rb")
